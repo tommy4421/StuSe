@@ -1,0 +1,26 @@
+
+
+#senioren
+{ 
+        height:auto;
+        text-align:center;
+}
+
+#content.box.style2
+{   
+        padding:20px;
+}
+
+#seniorentext
+{
+        
+
+}
+
+#two
+{ 
+        background: url("images/overlay.png"), url("../../images/senior2.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+}
