@@ -24,3 +24,42 @@
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 }
+
+#stuseLogo {
+    width: 160px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.stuseIntro {
+    background-image: url(images/senior1.jpg);
+    background-repeat: no-repeat; background-size: cover;
+}
+
+#knopStuse {
+    padding-top: 270px;
+}
+
+.stuseOne {
+    color: gray; 
+    text-align: center;
+    background-color: white;
+    padding-top: 0px;
+    margin-left: 35px;
+    margin-top: 50px;
+}
+
+.lijntje {
+    width: 500px;
+}
+
+.ava {
+    height: 80px;
+    width:80px;
+    border-radius: 200px;
+}
+
+.overons {
+    text-align: center;
+    font-size: 10px;
+}
