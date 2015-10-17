@@ -2955,14 +2955,16 @@
 
 /* Footer */
 
-        #footer {
+ 	#footer {
 		position: relative;
 		height: 22em;
 		margin: 0;
-		background: #363535;
+		background: #2c2c2c;
 		color: #999;
 		color: rgba(185, 186, 187, 0.5);
 		overflow: hidden;
+		bottom:0;
+
 
 	}
       #hr {
@@ -2974,7 +2976,7 @@
 }
       
 	  #footer b{
-	display: block;
+	  	display: block;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
         margin-left: auto;
@@ -3001,11 +3003,13 @@
 			margin-left: 5em;
 			
 			
+			
 		}
 
 		    #volgons a{
 		    	padding:0.7em;
 		    	padding-left:0;
+
 		    }
 
 		 #tweets{
