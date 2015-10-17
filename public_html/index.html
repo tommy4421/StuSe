@@ -159,36 +159,51 @@
         </section>
 
 
-		<!-- Contact -->
-			<section id="contact" class="main style3 secondary">
-				<div class="content container">
-					<header>
-						<h2>Contact</h2>
-						<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.</p>
-					</header>
-					<div class="box container 75%">
+		<!-- Google Maps -->
+            <div id ="maps">
 
-					<!-- Contact Form -->
-							<form method="post" action="#">
-								<div class="row 50%">
-									<div class="6u 12u(mobile)"><input type="text" name="name" placeholder="Naam" /></div>
-									<div class="6u 12u(mobile)"><input type="email" name="email" placeholder="Email" /></div>
-								</div>
-								<div class="row 50%">
-									<div class="12u"><textarea name="message" placeholder="Bericht" rows="6"></textarea></div>
-								</div>
-								<div class="row">
-									<div class="12u">
-										<ul class="actions">
-											<li><input type="submit" value="Stuur bericht" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
+            	        <style type="text/css">
+            
+            #map {
+                width: 1400px;
+                height: 500px;
+            }
+        </style>
+        
+       
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        
+        <script type="text/javascript">
+          
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+               
+                var mapOptions = {
+                    
+                    zoom: 12,
+                    center: new google.maps.LatLng(51.5628623,4.5393335), 
+                    styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+                };
 
-					</div>
-				</div>
-			</section>
+
+                var mapElement = document.getElementById('map');
+                var map = new google.maps.Map(mapElement, mapOptions);
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(51.5628623,4.5393335),
+                    map: map,
+                    title: 'Snazzy!'
+                });
+            }
+        </script>
+    
+    <body>
+        
+        
+        <div id="map"></div>
+    </body>
+</div>
+			
 
 		<!-- Footer -->
 			<footer id="footer">
@@ -196,23 +211,23 @@
 				<div id="hr"></div>
 
                 <!-- Volg ons -->
-		<div id="volgons">
-			<h3>Volg ons!<h3>
-			<br>
-			<a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a>
-			<a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a>
-			<a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a>
-		</div>
+				<div id="volgons">
+					<h3>Volg ons!<h3>
+						<br>
+					    <a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a>
+						<a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a>
+						<a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a>
+				</div>
 
                 <!-- Tweets -->
                 <div id= "tweets">
-                        <h3> Recente tweets </h3>
-                        <br>
-                        <a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a>
-                        Weer een heerlijk dagje gewerkt <br>
+                	<h3> Recente tweets </h3>
+                	<br>
+                	<a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a>
+                	Weer een heerlijk dagje gewerkt <br>
                 	bij stuseNL
                 	<br><br>
-                        <a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a>
+                    <a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a>
                 	Meld je aan voor de opendag van <br> &commat;stusenl &num;senioren &num;thuiszorg
                 </div>
 
@@ -223,19 +238,19 @@
                 	<p> We zijn bijna klaar om voor de opening van StuSe!<br>Houd onze website in de gaten voor de laatste updates.<br> Onder de eerste 100 aanmeldingen verloten we een<br> half jaar gratis abonnement op onze dienst!
                 </div>
 
-		<!-- Copyright -->
-			<ul class="copy">
-			<li>&copy; 2015 StuSe</li>
-			</ul>
+				<!-- Copyright -->
+					<ul class="copy">
+						<li>&copy; 2015 StuSe</li>
+					</ul>
 
-		<!-- Menu -->
-			<ul class="menu">
-				<li><a href="#intro">Home</a></li>
-				<li><a href="#one">Over ons</a></li>
-				<li><a href="#two">Senioren</a></li>
-				<li><a href="#work">Studenten</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
+				<!-- Menu -->
+					<ul class="menu">
+						<li><a href="#intro">Home</a></li>
+						<li><a href="#one">Over ons</a></li>
+						<li><a href="#two">Senioren</a></li>
+						<li><a href="#work">Studenten</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
 
 			</footer>
 
