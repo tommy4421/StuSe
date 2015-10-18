@@ -1,20 +1,17 @@
 
 
-#senioren
-{ 
-        height:auto;
-        text-align:center;
-}
-
 #content.box.style2
 {   
         padding:20px;
 }
 
-#seniorentext
+#one
 {
-        
-
+    height: 500px; 
+    margin-bottom: 100px;
+    text-align: center;
+    color: gray; 
+    background-color: white;
 }
 
 #two
@@ -48,14 +45,6 @@
     padding-top: 270px;
 }
 
-.stuseOne {
-    color: gray; 
-    text-align: center;
-    background-color: white;
-    padding-top: 0px;
-    margin-left: 35px;
-    margin-top: 50px;
-}
 
 .lijntje {
     width: 500px;
@@ -69,7 +58,7 @@
 
 .overons {
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 #map
