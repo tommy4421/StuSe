@@ -12,6 +12,7 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
         <link rel="stylesheet" href="assets/css/opmaak.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<link rel="icon" href="images/favicon.ico">
@@ -22,9 +23,39 @@
 			<header id="header">
 
 				<!-- Logo -->
-                                <img src="images/logo.png" style="width: 160px; padding-top: 5px; padding-left: 10px;"/>
+                                
 
-				<!-- Nav -->
+                <!-- Nieuwe Navigatie -->
+                <!-- Menu blok wanneer het scherm klein is. -->
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+
+                            <a class="navbar-brand" rel="home" href="index.html" title="Stuse">
+                                <img style="max-width:200px; margin-top: -7px;" src="images/logo.png">
+                            </a>
+                         </div>
+
+                        <!-- Menu zelf -->
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#intro">HOME</a></li>
+                                <li><a href="#one">OVER ONS</a></li>
+                                <li><a href="#two">SENIOREN</a></li>
+                                <li><a href="#three">STUDENTEN</a></li>
+                                <li><a href="#contact">CONTACT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Oude Navigatie -->
+                 <!--
 					<nav id="nav">
 						<ul>
 							<li><a href="#intro">HOME</a></li>
@@ -34,7 +65,7 @@
 							<li><a href="#contact">CONTACT</a></li>
 						</ul>
 					</nav>
-
+                    -->
 			</header>
 
 		<!-- Intro -->
@@ -48,12 +79,12 @@
 			</section>
 
 		<!-- One -->
-                        <section id="one" class="right dark fullscreen stuseOne" style="height: 2200px; margin-bottom: 0px;">
+                        <section id="one" class="right dark fullscreen stuseOne" style="height: 1000px; margin-bottom: 0px;">
                             <div>
-                                <hr class="lijntje">
+                                <hr class="">
                                             <h2>OVER ONS</h2>
-                                <hr class="lijntje">
-                                            <div>
+                                <hr class="">
+                                            <div class="col-md-4 col-lg-2">
                                                 <image src="images/groep/chiel.jpg" class="ava"/>
                                                         <h5 class="overons" style=""><strong>Hoi,
                                                         Ik ben Chiel Nieuwlaat, ik ben manager bij StuSe.<br />
@@ -61,7 +92,7 @@
                                                         tussen jongeren en senioren. Heeft u vragen of ideeën mail mij gerust.<br />
                                                         cnieuwlaat@stuse.nl</strong></h5>
                                                         </div>
-                                                        <div>
+                                                        <div class="col-md-4 col-lg-2">
                                                         <image src="images/groep/nick.jpg" class="ava"/>
                                                         <h5 class="overons" style=""><strong>Mijn naam is Nick Kunnert,<br />
                                                                 ik ben momenteel 17 jaar oud en ik studeer momenteel informatica<br />
@@ -70,7 +101,7 @@
                                                                 webmaster@stuse.nl</strong></h5>
                                                         </div>
 
-                                                        <div>
+                                                        <div class="col-md-4 col-lg-2">
                                                         <image src="images/groep/bram.jpg" class="ava"/>
                                                         <h5 class="overons" style="">Hoi,<br />
                                                             ik ben Bram Mathijssen 22 jaar en ik studeer Informatica op Avans Hogeschool te Breda.<br />
@@ -78,7 +109,7 @@
                                                             Voor vragen kunt u bellen naar (06) 50220503 of mailen naar Bram.Mathijssen@Stuse.nl</h5>
                                                         </div>
 
-                                                        <div>
+                                                        <div class="col-md-4 col-lg-2">
                                                         <image src="images/groep/sidney.jpg" class="ava"/>
                                                         <h5 class="overons" style="">Ik ben Sidney van Lith,<br />
                                                             ik ben een 1ste jaar student Business iT & management aan Avans hogeschool.<br />
@@ -86,7 +117,7 @@
                                                             Mocht u vragen hebben dan ben ik te bereiken op +31-649138851 of sidney.vanlith@stuse.nl.</h5>
                                                         </div>
 
-                                                        <div>
+                                                        <div class="col-md-4 col-lg-2">
                                                         <image src="images/groep/martijn.jpg" class="ava"/>
                                                         <h5 class="overons" style=""><strong>Ik ben Martijn Muskens,<br />
                                                                 een 20 jarige creatieve jongeman die al sinds jongs af aan interesse heeft in<br />
@@ -94,7 +125,7 @@
                                                                 Sinds kort heb ik dat ook nog uitgebreid door de bijbehorende technieken aan te leren om websites te bouwen.<br />
                                                                 Heeft u vragen? Mail mij via martijnm@stuse.nl</strong></h5>
                                                         </div>
-                                                        <div>
+                                                        <div class="col-md-4 col-lg-2">
                                                         <image src="images/groep/maud.jpg" class="ava"/>
                                                         <h5 class="overons" style=""><strong>Hallo, ik ben Maud Michielsen,<br />
                                                         Ik studeer Business IT and Management aan Avans Breda.<br />
@@ -104,7 +135,7 @@
                                                         Maandag t/m vrijdag van 10:00 tot 17:00<br />
                                                         - Te mailen naar: helpmij@StuSe.com</strong></h5>
                                                         </div>
-                                                        <div>
+                                                        <div class="col-md-12 col-lg-2">
                                                         <image src="images/groep/tom.jpg" class="ava"/>
                                                        <h5 class="overons" style="">Hallo, ik ben Tom Maljaars,<br />
                                                             ik doe de marketing en promotie bij StuSe.<br /> 
@@ -159,93 +190,96 @@
         </section>
 
 
-		<!-- Google Maps -->
-        <div id="map">
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-        <script type="text/javascript">
+        <section id="contact" class="">
 
-            google.maps.event.addDomListener(window, 'load', init);
-        
-            function init() {
-               
-                var mapOptions = {
-                    
-                    zoom: 12,
-                    center: new google.maps.LatLng(51.5628623,4.5393335), 
-                    styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
-                };
+            <!-- Google Maps -->
+            <div id="map">
+                <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+                <script type="text/javascript">
+
+                    google.maps.event.addDomListener(window, 'load', init);
+
+                    function init() {
+
+                        var mapOptions = {
+
+                            zoom: 12,
+                            center: new google.maps.LatLng(51.5628623, 4.5393335),
+                            styles: [{ "featureType": "all", "elementType": "labels.text.fill", "stylers": [{ "saturation": 36 }, { "color": "#000000" }, { "lightness": 40 }] }, { "featureType": "all", "elementType": "labels.text.stroke", "stylers": [{ "visibility": "on" }, { "color": "#000000" }, { "lightness": 16 }] }, { "featureType": "all", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative", "elementType": "geometry.fill", "stylers": [{ "color": "#000000" }, { "lightness": 20 }] }, { "featureType": "administrative", "elementType": "geometry.stroke", "stylers": [{ "color": "#000000" }, { "lightness": 17 }, { "weight": 1.2 }] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 20 }] }, { "featureType": "poi", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 21 }] }, { "featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{ "color": "#000000" }, { "lightness": 17 }] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{ "color": "#000000" }, { "lightness": 29 }, { "weight": 0.2 }] }, { "featureType": "road.arterial", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 18 }] }, { "featureType": "road.local", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 16 }] }, { "featureType": "transit", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 19 }] }, { "featureType": "water", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 17 }] }]
+                        };
 
 
-                var mapElement = document.getElementById('map');
-                var map = new google.maps.Map(mapElement, mapOptions);
-                var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(51.5628623,4.5393335),
-                    map: map,
-                    title: 'Snazzy!'
-                });
-            }
-        </script>
+                        var mapElement = document.getElementById('map');
+                        var map = new google.maps.Map(mapElement, mapOptions);
+                        var marker = new google.maps.Marker({
+                            position: new google.maps.LatLng(51.5628623, 4.5393335),
+                            map: map,
+                            title: 'Snazzy!'
+                        });
+                    }
+                </script>
 
-        </div>
-        
+            </div>
 
-		<!-- Footer -->
-			<footer id="footer">
 
-				<div id="hr"></div>
+            <!-- Footer -->
+            <footer id="footer">
+
+                <div id="hr"></div>
 
                 <!-- Volg ons -->
-				<div id="volgons">
-					<h3>Volg ons!<h3>
-						<br>
-					    <a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a>
-						<a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a>
-						<a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a>
-				</div>
+                <div id="volgons">
+                    <h3>
+                        Volg ons!<h3>
+                            <br>
+                            <a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a>
+                            <a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a>
+                            <a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a>
+                </div>
 
                 <!-- Tweets -->
-                <div id= "tweets">
-                	<h3> Recente tweets </h3>
-                	<br>
-                	<a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a>
-                	Weer een heerlijk dagje gewerkt <br>
-                	bij stuseNL
-                	<br><br>
+                <div id="tweets">
+                    <h3> Recente tweets </h3>
+                    <br>
                     <a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a>
-                	Meld je aan voor de opendag van <br> &commat;stusenl &num;senioren &num;thuiszorg
+                    Weer een heerlijk dagje gewerkt <br>
+                    bij stuseNL
+                    <br><br>
+                    <a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a>
+                    Meld je aan voor de opendag van <br> &commat;stusenl &num;senioren &num;thuiszorg
                 </div>
 
                 <!-- Nieuws -->
-                <div id = "nieuws">
-                	<h3> Nieuwsberichten </h3>
-                	<br>
-                	<p> We zijn bijna klaar om voor de opening van StuSe!<br>Houd onze website in de gaten voor de laatste updates.<br> Onder de eerste 100 aanmeldingen verloten we een<br> half jaar gratis abonnement op onze dienst!
+                <div id="nieuws">
+                    <h3> Nieuwsberichten </h3>
+                    <br>
+                    <p> We zijn bijna klaar om voor de opening van StuSe!<br>Houd onze website in de gaten voor de laatste updates.<br> Onder de eerste 100 aanmeldingen verloten we een<br> half jaar gratis abonnement op onze dienst!
                 </div>
 
-				<!-- Copyright -->
-					<ul class="copy">
-						<li>&copy; 2015 StuSe</li>
-					</ul>
+                <!-- Copyright -->
+                <ul class="copy">
+                    <li>&copy; 2015 StuSe</li>
+                </ul>
 
-				<!-- Menu -->
-					<ul class="menu">
-						<li><a href="#intro">Home</a></li>
-						<li><a href="#one">Over ons</a></li>
-						<li><a href="#two">Senioren</a></li>
-						<li><a href="#work">Studenten</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-    </body>
+                <!-- Menu -->
+                <ul class="menu">
+                    <li><a href="#intro">Home</a></li>
+                    <li><a href="#one">Over ons</a></li>
+                    <li><a href="#two">Senioren</a></li>
+                    <li><a href="#work">Studenten</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </footer>
+        </section>
+            <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.poptrox.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/skel.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+            <script src="assets/js/main.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
 </html>
